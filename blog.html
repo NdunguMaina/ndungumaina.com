@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="./assets/css/blog.css">
+</head>
+<body>
+    <div class="center">
+        <nav>
+         <h1>Blog</h1>
+        </nav>
+    </div>
+   <div class="center">
+    
+     <div id="bbody">
+        <form action="" id="myForm">
+
+            <input type="text" name="title" id="title" placeholder="Title"> <br><br>
+            
+            <input type="file" name="image" id="image" onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])"> <br><br>
+            <img id="blah" src="" alt="" height="90vh" width="90vw"><br><br>
+            <textarea name="content" id="content" cols="50" rows="20"></textarea>
+            <br><br>
+            <input type="submit" value="Submit" id="submit" onclick="submitForm()">
+        </form>
+       
+     </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-firestore.js"></script>
+
+    <script src="./assets/js/blog.js"></script>
+</body>
+</html>
