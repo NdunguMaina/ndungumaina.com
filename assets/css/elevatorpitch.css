@@ -1,0 +1,15 @@
+body{
+    background:  hsl(0, 0%, 19%) 97% ;
+}
+#center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #vid{
+    width: 70vw;
+    height: 70vh;
+  }
+  
